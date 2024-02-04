@@ -1,0 +1,32 @@
+.userinfo{
+    width: 400px;
+    height: 175px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+.userimg{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.usertext{
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.usertext h1{
+    font-family: 黑体;
+}
+
+.usertext span{
+    font-family: 微软雅黑;
+    font-size: 18px;
+}

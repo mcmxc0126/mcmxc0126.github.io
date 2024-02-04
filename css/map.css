@@ -1,0 +1,38 @@
+#mapbody{
+    width: 1300px;
+    margin: auto;
+    padding: 25px;
+    margin-top: 75px;
+    height: 750px;
+}
+
+#mapbodyleft{
+    width: 400px;
+    height: 700px;
+    float: left;
+}
+
+#mapselect{
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+#mapbodyright{
+    width: 800px;
+    height: 700px;
+    float: right;
+}
+
+#mapitself{
+    background-color: #fff;
+    width: 800px;
+    height: 700px;
+    border-radius: 30px;
+}

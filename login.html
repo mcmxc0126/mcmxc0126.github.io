@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="media/spring.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>登录</title>
+</head>
+
+<body style="background-color: #2f5090;">
+    <div id="logincard">
+        <div id="logincard_l">
+            <div id="loginleftlogo"><img src="media/logo2.png" alt="" width="100%"><img src="media/title.png"
+                    alt="" width="100%"></div>
+
+        </div>
+        <div id="logincard_r">
+            <div id="logintext">登录</div>
+            <div id="logininput">
+                <div class="input-group input-group-lg mb-3" id="loginname">
+                    <span class="input-group-text"><img src="media/phone.svg" alt=""></span>
+                    <input class="form-control" type="tel" maxlength="11" name="username" id="username"
+                        placeholder="请输入您的手机号码">
+
+                </div>
+                <div class="err_msg" id="username_err" style="display: none">手机号码格式错误</div>
+                <div class="input-group input-group-lg mb-3" id="loginpassword">
+                    <span class="input-group-text"><img src="media/key.svg" alt=""></span>
+                    <input class="form-control" type="password" maxlength="16" name="userpassword" id="userpassword"
+                        placeholder="请输入密码">
+                </div>
+                <div class="err_msg" id="userpassword_err" style="display: none">密码应在8-16位字符之间</div>
+            </div>
+            <div class="d-grid gap-2" id="loginbutton">
+                <button class="btn btn-primary" id="loginnnnnnn" type="submit">
+                    登录
+                </button>
+                <!-- 这里可以再放一个button，未在校友库里的校友提示联系以获取权限 -->
+                <!-- Popovers in Bootstrap5 -->
+            </div>
+            <script>
+                var loginbtn = document.getElementById("loginnnnnnn")
+                var phonenuminput = document.getElementById("username")
+                var passwordinput = document.getElementById("userpassword")
+
+                phonenuminput.onblur = checkPhonenum
+                function checkPhonenum() {
+                    var phonenumtrim = phonenuminput.value.trim()
+                    var flag = phonenumtrim.length == 11
+                    if (flag) {
+                        document.getElementById("username_err").style.display = 'none'
+                        phonenuminput.className = "form-control is-valid"
+                    } else {
+                        document.getElementById("username_err").style.display = ''
+                        phonenuminput.className = "form-control is-invalid"
+                    }
+                    return flag
+                }
+                passwordinput.onblur = checkPassword
+                function checkPassword() {
+                    var passwordtrim = passwordinput.value.trim()
+                    var flag = passwordtrim.length >= 8
+                    if (flag) {
+                        document.getElementById("userpassword_err").style.display = 'none'
+                        passwordinput.className = "form-control is-valid"
+                    } else {
+                        document.getElementById("userpassword_err").style.display = ''
+                        passwordinput.className = "form-control is-invalid"
+                    }
+                    return flag
+                }
+
+                loginbtn.onclick = function () {
+                    if (checkPhonenum() && checkPassword()) {
+                        if (phonenuminput.value.trim() == "15239800126") {
+                            if (passwordinput.value.trim() == "12345678") {
+                                alert("login successfully")
+                                window.location.href = "index.html"
+                            } else {
+                                alert("login failed for wrong password")
+                            }
+                        } else {
+                            alert("login failed for wrong phonenum")
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

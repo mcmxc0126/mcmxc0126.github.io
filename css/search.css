@@ -1,0 +1,30 @@
+#searchpage{
+    width: 1300px;
+    margin: auto;
+    padding: 25px;
+    margin-top: 75px;
+    height: 700px;
+}
+
+#beforesearch{
+    width: 1250px;
+    margin: auto;
+    height: 175px;
+}
+
+#searchselect{
+    float: right;
+    width: 800px;
+    height: 175px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+#aftersearch{
+    width: 1250px;
+    margin: auto;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 25px;
+}

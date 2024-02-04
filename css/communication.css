@@ -1,0 +1,38 @@
+#commbody{
+    width: 1300px;
+    margin: auto;
+    padding: 25px;
+    margin-top: 75px;
+    height: 750px;
+}
+
+#commbodyleft{
+    width: 400px;
+    height: 700px;
+    float: left;
+}
+
+#myhistoryshare{
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+#commbodyright{
+    width: 800px;
+    height: 700px;
+    float: right;
+}
+
+#sharespace{
+    background-color: #fff;
+    width: 800px;
+    height: 700px;
+    border-radius: 30px;
+}

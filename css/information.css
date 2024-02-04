@@ -1,0 +1,24 @@
+#informationupdate{
+    width: 1300px;
+    margin: auto;
+    padding: 25px;
+    margin-top: 75px;
+    height: 1200px;
+}
+
+#beforeupdate{
+    width: 1250px;
+    margin: auto;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+#updateform{
+    width: 1250px;
+    margin: auto;
+    height: 750px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 25px;
+}

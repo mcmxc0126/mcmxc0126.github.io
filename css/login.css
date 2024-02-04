@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#logincard{
+    border-radius: 30px;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    bottom: 10%;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    /* opacity: 0.9; */
+}
+
+#logincard_l{
+    float: left;
+    width: 35%;
+    height: 80%;
+    background-color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+#loginleftlogo{
+    width: 100%;
+    margin: auto,auto;
+}
+
+#logincard_r{
+    float: right;
+    width: 50%;
+    height: 80%;
+    border-radius: 30px;
+    background-color: #2f4f9011;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+#logintext{
+    color: #2f5090;
+    font-size: 60px;
+    width: 120px;
+    height: 30%;
+    margin: auto;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+#logininput{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: transparent;
+}
+
+.err_msg{
+    color: red;
+    font-weight: bold;
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+#loginbutton{
+    width: 200px;
+    height: 20%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#loginnnnnnn{
+    height: 50%;
+    font-size: 30px;
+    background-color: #2f5090;
+    font-weight: bold;
+}
